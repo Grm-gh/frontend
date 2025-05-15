@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Grid Lines -->
+  <g stroke="#2D3748" stroke-width="1">
+    <line x1="100" y1="50" x2="100" y2="500" />
+    <line x1="100" y1="500" x2="700" y2="500" />
+    <line x1="100" y1="50" x2="700" y2="50" opacity="0.2" />
+    <line x1="100" y1="162.5" x2="700" y2="162.5" opacity="0.2" />
+    <line x1="100" y1="275" x2="700" y2="275" opacity="0.2" />
+    <line x1="100" y1="387.5" x2="700" y2="387.5" opacity="0.2" />
+  </g>
+
+  <!-- Main Chart Line -->
+  <path
+    d="M100,450 C150,450 200,400 250,380 S350,350 400,300 S500,200 550,150 S650,100 700,50"
+    stroke="#3B82F6"
+    stroke-width="3"
+    fill="none"
+  />
+
+  <!-- Area under the curve -->
+  <path
+    d="M100,450 C150,450 200,400 250,380 S350,350 400,300 S500,200 550,150 S650,100 700,50 L700,500 L100,500 Z"
+    fill="url(#gradient)"
+    opacity="0.2"
+  />
+
+  <!-- Gradient Definition -->
+  <defs>
+    <linearGradient id="gradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Data Points -->
+  <g fill="#3B82F6">
+    <circle cx="100" cy="450" r="4" />
+    <circle cx="250" cy="380" r="4" />
+    <circle cx="400" cy="300" r="4" />
+    <circle cx="550" cy="150" r="4" />
+    <circle cx="700" cy="50" r="4" />
+  </g>
+
+  <!-- Y-axis Labels -->
+  <g fill="#94A3B8" font-family="system-ui" font-size="12">
+    <text x="70" y="505">0</text>
+    <text x="70" y="392">25</text>
+    <text x="70" y="279">50</text>
+    <text x="70" y="167">75</text>
+    <text x="70" y="55">100</text>
+  </g>
+
+  <!-- X-axis Labels -->
+  <g fill="#94A3B8" font-family="system-ui" font-size="12" text-anchor="middle">
+    <text x="100" y="520">Jan</text>
+    <text x="250" y="520">Mar</text>
+    <text x="400" y="520">Jun</text>
+    <text x="550" y="520">Sep</text>
+    <text x="700" y="520">Dec</text>
+  </g>
+</svg> 
