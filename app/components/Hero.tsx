@@ -43,8 +43,9 @@ const Hero = () => {
               <Image
                 src="/investment-chart.svg"
                 alt="Investment Growth Chart"
-                layout="fill"
-                objectFit="contain"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                style={{ objectFit: 'contain' }}
                 priority
               />
             </div>
